@@ -4,8 +4,8 @@ pipeline {
         stage('checkout GIT') {
             steps {
                 echo 'pulling...'
-                git branch: 'master',
-                    url: 'https://github.com/Houssemaskri/CrudEtudiant'
+                git branch: 'main',
+                    url: 'https://github.com/MontassarSakouhi/devopss'
             }
         }
 
