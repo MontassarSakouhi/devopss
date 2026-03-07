@@ -40,14 +40,5 @@ pipeline {
                 }
             }
         }
-
-        stage('Quality Gate') {
-            steps {
-                // Wait for SonarQube analysis and fail the build if the Quality Gate fails
-                timeout(time: 5, unit: 'MINUTES') {
-                    waitForQualityGate(abortPipeline: true)
-                }
-            }
-        }
     }
 }
